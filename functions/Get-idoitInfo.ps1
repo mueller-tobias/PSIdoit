@@ -1,20 +1,20 @@
     <#
 	.Synopsis
-		Gets info from bConnect.
+		Gets info from iDoit.
 	
 	.DESCRIPTION
-		A detailed description of the Get-bConnectInfo function.
+		A detailed description of the Get-iDoitInfo function.
 	
 	.NOTES
 		Additional information about the function.
 #>
-function Get-bConnectInfo {
+function Get-iDoitInfo {
 	[CmdletBinding()]
 	param ()
 	
-	If (!$script:_bConnectInfo) {
-        $script:_bConnectInfo = Invoke-bConnectGet -Controller "info" -noVersion
+	If (!$script:_iDoitInfo) {
+        $script:_iDoitInfo = Invoke-iDoit -Method "idoit.version"
 	}
 	
-	return $script:_bConnectInfo
+	$script:_iDoitInfo
 }
