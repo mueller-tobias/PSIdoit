@@ -24,3 +24,4 @@ namespace bConnect.Endpoints
         ExecuteUserRelatedJobsPrimaryUser = 48
     }
 }
+

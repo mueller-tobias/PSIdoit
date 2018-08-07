@@ -1,4 +1,4 @@
-#
+﻿#
 # Modulmanifest für das Modul "PSIdoit"
 #
 # Generiert von: Tobias Mueller
@@ -77,7 +77,6 @@ FunctionsToExport = @('Initialize-idoit',
 'Get-iDoitInfo',
 'Get-iDoitObject',
 'Get-iDoitObjectCategory',
-'Get-iDoitObjectFull',
 'Get-idoitObjectTypeCategories',
 'Get-iDoitVersion',
 'Search-Idoit',
@@ -132,5 +131,6 @@ PrivateData = @{
 # DefaultCommandPrefix = ''
 
 }
+
 
 

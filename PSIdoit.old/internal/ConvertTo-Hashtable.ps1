@@ -1,4 +1,4 @@
-Function ConvertTo-Hashtable {
+﻿Function ConvertTo-Hashtable {
 	Param (
 		[Parameter(Mandatory, ValueFromPipeline)]
 		[PSObject[]]$Object
@@ -13,3 +13,4 @@ Function ConvertTo-Hashtable {
 		}
 	}
 }
+

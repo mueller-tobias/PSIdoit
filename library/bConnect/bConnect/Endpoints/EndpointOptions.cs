@@ -54,3 +54,4 @@ namespace bConnect.Endpoints
         EnergyManagement = 512,
     }
 }
+

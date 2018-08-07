@@ -1,4 +1,4 @@
-Describe "Testing Get-IdoitInfo Function" {
+﻿Describe "Testing Get-IdoitInfo Function" {
     Context "Checking Get-iDoitInfo for the correct return values" {
         It "Reads Version Infos from the API" {
             $iDoitInfo = Get-iDoitInfo

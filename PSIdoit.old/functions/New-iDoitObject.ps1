@@ -1,4 +1,4 @@
-function New-iDoitObject {
+﻿function New-iDoitObject {
 	[CmdletBinding()]
 	param
 	(

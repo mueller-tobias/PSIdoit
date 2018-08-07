@@ -1,4 +1,4 @@
-function Set-iDoitCredentials {
+﻿function Set-iDoitCredential {
     param (
         [System.Management.Automation.PSCredential]$Credentials
     )

@@ -1,4 +1,4 @@
-$script:ModuleName = 'bConnect'
+﻿$script:ModuleName = 'bConnect'
 # Removes all versions of the module from the session before importing
 Get-Module $ModuleName | Remove-Module
 $ModuleBase = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -11,3 +11,4 @@ Import-Module $ModuleBase\$ModuleName.psd1 -PassThru -ErrorAction Stop | Out-Nul
 Describe "Basic function feature tests" -Tags Build {
 
 }
+

@@ -1,4 +1,4 @@
-Function Write-VersionRequirements {
+﻿Function Write-VersionRequirements {
     # Change the variable below (ProjectPath) to your modules location
     $ProjectPath = "$env:USERPROFILE\Documents\WindowsPowerShell\Modules\bConnect" 
 

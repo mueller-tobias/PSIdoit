@@ -29,3 +29,4 @@ namespace bConnect.Endpoints
         NeverUpdatePrimaryUser = 12
     }
 }
+

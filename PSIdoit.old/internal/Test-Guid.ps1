@@ -1,4 +1,4 @@
-#--- Helper ---
+﻿#--- Helper ---
 Function Test-Guid() {
     <#
         .Synopsis

@@ -1,4 +1,4 @@
-$script:ModuleRoot = $PSScriptRoot
+﻿$script:ModuleRoot = $PSScriptRoot
 $script:ModuleVersion = "1.0.0.0"
 
 $script:_connectInitialized = $false
@@ -60,3 +60,4 @@ foreach ($function in (Get-ChildItem "$ModuleRoot\functions" -Filter "*.ps1" -Re
 
 # Execute Postimport actions
 . Import-ModuleFile -Path "$ModuleRoot\internal\scripts\postimport.ps1"
+

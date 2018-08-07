@@ -1,28 +1,28 @@
-<#
+﻿<#
 	.Synopsis
 		Initialize the connection to bConnect.
-	
+
 	.DESCRIPTION
 		A detailed description of the Initialize-idoit function.
-	
+
 	.Parameter Server
 		Hostname/FQDN/IP of the baramundi Management Server.
-	
+
 	.Parameter Port
 		Port of bConnect (default: 443).
-	
+
 	.Parameter ApiKey
 		PSCredential-object with permissions in the bMS.
-	
+
 	.PARAMETER Credentials
 		A description of the Credentials parameter.
-	
+
 	.PARAMETER AcceptSelfSignedCertificate
 		A description of the AcceptSelfSignedCertificate parameter.
-	
+
 	.Parameter AcceptSelfSignedCertificate
 		Switch to ignore untrusted certificates.
-	
+
 	.NOTES
 		Additional information about the function.
 #>
@@ -42,23 +42,24 @@ function Initialize-idoit {
 		[System.Management.Automation.PSCredential]$Credentials,
 		[switch]$AcceptSelfSignedCertificate
 	)
-	
-	If ($AcceptSelfSignedCertifcate) {
-		[System.Net.ServicePointManager]::CertificatePolicy = New-Object ignoreCertificatePolicy
+
+	If ($AcceptSelfSignedCertificate)
+	{
+		[System.Net.ServicePointManager]::CertificatePolicy = New-Object bConnect.Connection.CertificatePolicy
 	}
-	
+
 	$_uri = "https://$($Server):$($Port)/src/jsonrpc.php"
-	
+
 	$script:_connectInitialized = $true
 	$script:_connectUri = $_uri
-	Set-iDoitCredentials -Credentials $Credentials
+	Set-iDoitCredential -Credentials $Credentials
 	$script:_connectApiKey = $ApiKey
-	
+
 	if ($Credentials) {
 		Connect-iDoit
 	}
 	$Test = Test-iDoit
-	
+
 	If ($Test -ne $true) {
 		$script:_connectInitialized = $false
 		$script:_connectUri = ""

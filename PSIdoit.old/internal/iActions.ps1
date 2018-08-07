@@ -1,4 +1,4 @@
-$Catg = Get-iDoitConstants -GlobalCategory
+﻿$Catg = Get-iDoitConstants -GlobalCategory
 
 foreach ($_Catg in $Catg.PSObject.Properties | Where-Object { $_.MemberType -eq "NoteProperty" }) {
 	Write-Verbose "Erstelle $($_Catg.Name)"

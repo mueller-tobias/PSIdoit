@@ -1,4 +1,4 @@
-<#
+﻿<#
 	.Synopsis
 		Initialize the connection to bConnect.
 	

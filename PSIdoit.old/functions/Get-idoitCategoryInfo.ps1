@@ -1,4 +1,4 @@
-    <#
+﻿    <#
 	.Synopsis
 		Gets info from iDoit.
 	

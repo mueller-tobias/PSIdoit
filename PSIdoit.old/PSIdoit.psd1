@@ -1,4 +1,4 @@
-#
+﻿#
 # Modulmanifest für das Modul "PSIdoit"
 #
 # Generiert von: Tobias Mueller
@@ -120,5 +120,6 @@ PrivateData = @{
 # DefaultCommandPrefix = ''
 
 }
+
 
 

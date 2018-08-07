@@ -1,4 +1,4 @@
-Function Get-iDoitVersion() {
+﻿Function Get-iDoitVersion() {
     <#
         .Synopis
             Checks for supported iDoit version and returns the version (e.g. "v1.0").

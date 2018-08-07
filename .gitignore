@@ -1,4 +1,4 @@
-
+﻿
 # ignore the settings folder and files for VSCode and PSS
 .vscode/*
 *.psproj
@@ -14,3 +14,4 @@ bConnect/bConnect.psproj
 bConnect/bConnect.psproj.bak
 bConnect/bConnect.psprojs
 bConnect/bConnect.psproj
+

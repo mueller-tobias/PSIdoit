@@ -1,4 +1,4 @@
-Function Test-iDoit() {
+﻿Function Test-iDoit() {
     <#
         .Synopsis
             INTERNAL - Validates the iDoit API Version and Connectivity
@@ -28,3 +28,4 @@ Function Test-iDoit() {
 	Return $true
 
 }
+

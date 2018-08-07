@@ -1,4 +1,4 @@
-function Search-Idoit
+﻿function Search-Idoit
 {
 	[CmdletBinding()]
 	param

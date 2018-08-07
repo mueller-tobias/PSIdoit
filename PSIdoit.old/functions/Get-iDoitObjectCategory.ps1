@@ -1,4 +1,4 @@
-function Get-iDoitObjectCategory {
+﻿function Get-iDoitObjectCategory {
 	[CmdletBinding(DefaultParameterSetName = 'Static')]
 	param
 	(

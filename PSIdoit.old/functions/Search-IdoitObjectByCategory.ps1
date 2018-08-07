@@ -1,4 +1,4 @@
-function Search-IdoitObjectByCategory
+﻿function Search-IdoitObjectByCategory
 {
 	[CmdletBinding()]
 	param

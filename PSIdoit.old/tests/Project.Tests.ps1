@@ -1,4 +1,4 @@
-$packages = get-package
+﻿$packages = get-package
 if ($packages.Name  -contains "PSScriptAnalyzer") {
     #PSScriptAnalyzer is installed on the system
 } else {
@@ -48,3 +48,4 @@ Describe "General project validation: $moduleName" -Tags Build {
         {Import-Module $ModuleBase\$ModuleName.psd1 -force } | Should Not Throw
     }
 }
+

@@ -1,4 +1,4 @@
-function Get-iDoitObjectFull {
+﻿function Get-iDoitObjectFull {
 	[CmdletBinding()]
 	param
 	(

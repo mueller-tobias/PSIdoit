@@ -1,4 +1,4 @@
-function Search-IdoitObjectByCategory
+﻿function Search-IdoitObjectByCategory
 {
 	[CmdletBinding()]
 	param
@@ -8,11 +8,11 @@ function Search-IdoitObjectByCategory
         [String]$Field,
         [String]$Value
 	)
-    
-    Write-Verbose -Message "Get Objects for Type $ObjectType"   
+
+    Write-Verbose -Message "Get Objects for Type $ObjectType"
     if ([int]::Parse($ObjectType)) {
         Write-Verbose -Message "Get Object for intType $ObjectType"
-        $_Objects = Get-iDoitObject -intType $ObjectType    
+        $_Objects = Get-iDoitObject -intType $ObjectType
     }
     Else {
         Write-Verbose -Message "Get Object for strType $ObjectType"
@@ -26,5 +26,5 @@ function Search-IdoitObjectByCategory
             Write-Verbose -Message "Found Object: $($_Object.Title)"
             $_CatEntry
         }
-    }		
+    }
 }
