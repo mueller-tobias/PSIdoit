@@ -1,0 +1,16 @@
+﻿<ProjectState>
+  <Version>1.0</Version>
+  <FileID>066520ca-b83f-45d8-a964-a9e5bb7ee1b0</FileID>
+  <OpenFolders>
+    <Folder>functions</Folder>
+    <Folder>internal</Folder>
+  </OpenFolders>
+  <OpenFiles>
+    <File>dynamic.ps1</File>
+    <File>internal\Scaffold.ps1</File>
+    <File>internal\iActions.ps1</File>
+    <File>PSIdoit.psm1</File>
+    <File>functions\Initialize-Idoit.ps1</File>
+    <File>functions\Get-idoitConstants.ps1</File>
+  </OpenFiles>
+</ProjectState>
