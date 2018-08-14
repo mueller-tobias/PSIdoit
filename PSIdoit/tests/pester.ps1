@@ -18,7 +18,7 @@ Import-Module "$PSScriptRoot\..\PSIdoit.psd1"
 Import-Module "$PSScriptRoot\..\PSIdoit.psm1" -Force
 
 #Initialize-iDoit -Server "it-idoit.b1shba.intern" -AcceptSelfSignedCertificate  -ApiKey "md0p5opek" -Credential "s2041"
-Initialize-iDoit -Server "it-idoit.b1shba.intern" -AcceptSelfSignedCertificate  -ApiKey "md0p5opek" 
+#Initialize-iDoit -Server "it-idoit.b1shba.intern" -AcceptSelfSignedCertificate  -ApiKey "md0p5opek" 
 
 $totalFailed = 0
 $totalRun = 0
