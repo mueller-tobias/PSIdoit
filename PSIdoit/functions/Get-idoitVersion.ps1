@@ -11,7 +11,7 @@
         $script:_iDoitInfo = Invoke-iDoit -Method "idoit.version"
 	}
 	
-	Write-Verbose "iDoit $($script:_iDoitInfo.Version)"
+	Write-PSFMessage -Level SomewhatVerbose "iDoit $($script:_iDoitInfo.Version)"
 	$script:_iDoitInfo.Version
 	
 }

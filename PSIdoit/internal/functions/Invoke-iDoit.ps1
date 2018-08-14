@@ -77,7 +77,7 @@ function Invoke-iDoit {
 			Throw $ErrorObject
 		}
 		else {
-			Write-Verbose "Nothing found for $Method"
+			Write-PSFMessage -Level SomewhatVerbose "Nothing found for $Method"
 		}
 
 

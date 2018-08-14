@@ -8,13 +8,13 @@
 	)
 
 	Process {
-		Write-Verbose -Message "Get Categories for Object Type $($Object.type)"
+		Write-PSFMessage -Level SomewhatVerbose -Message "Get Categories for Object Type $($Object.type)"
 		$_ObjectCategories = Get-idoitObjectTypeCategories -Type $Object.type
 
 		$_List = @()
 
 		foreach ($_Category in $_ObjectCategories) {
-			Write-Verbose -Message "Get Category $($_Category.const) for Object $($Object.Id)"
+			Write-PSFMessage -Level SomewhatVerbose -Message "Get Category $($_Category.const) for Object $($Object.Id)"
 			$_Cat = @{$_Category.const = Get-iDoitObjectCategory -ObjectID $Object.Id -Category $_Category.const}
 			$_List += $_Cat
 		}

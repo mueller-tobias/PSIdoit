@@ -69,8 +69,8 @@ function Initialize-idoit {
 		Throw $ErrorObject
 	}
 	else {
-		Write-Verbose -Message "Verbindung mit $Server hergestellt."
-		Write-Verbose -Message "i-Doit Version: $($script:_iDoitInfo.Version)"
-		Write-Verbose -Message "Logged in: $($script:_iDoitInfo.Login.Name) (UserID: $($script:_iDoitInfo.Login.UserID))"
+		Write-PSFMessage -Level SomewhatVerbose -Message "Verbindung mit $Server hergestellt."
+		Write-PSFMessage -Level SomewhatVerbose -Message "i-Doit Version: $($script:_iDoitInfo.Version)"
+		Write-PSFMessage -Level SomewhatVerbose -Message "Logged in: $($script:_iDoitInfo.Login.Name) (UserID: $($script:_iDoitInfo.Login.UserID))"
 	}
 }
