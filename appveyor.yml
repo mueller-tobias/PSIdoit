@@ -1,0 +1,12 @@
+skip_commits:
+  files:
+    - '**/*.md'
+
+install:
+  - cinst pester
+  - ps: Install-Module PSFramework -AllowClobber -Force
+
+build: off
+
+test_script:
+    - ps: .\PSIdoit\tests\pester.ps1
