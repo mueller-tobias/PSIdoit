@@ -73,7 +73,7 @@ FormatsToProcess = @('xml\psidoit.Format.ps1xml')
 # Aus diesem Modul zu exportierende Funktionen. Um optimale Leistung zu erzielen, verwenden Sie keine Platzhalter und löschen den Eintrag nicht. Verwenden Sie ein leeres Array, wenn keine zu exportierenden Funktionen vorhanden sind.
 FunctionsToExport = @('Initialize-idoit',
                         'Get-iDoitCategoryInfo',
-                        'Get-iDoitConstants',
+                        'Get-iDoitConstant',
                         'Get-iDoitInfo',
                         'Get-iDoitObject',
                         'Get-iDoitObjectCategory',
