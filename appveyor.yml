@@ -5,6 +5,8 @@ skip_commits:
 install:
   - cinst pester
   - ps: Install-Module PSFramework -AllowClobber -Force
+  - ps: Install-Module -Name PSScriptAnalyzer -Force
+  
 
 build: off
 
